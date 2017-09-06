@@ -1,0 +1,20 @@
+<h1>Here are your tickets</h1>
+
+<table>
+  <thead>
+    <th> Id </th>
+    <th> Name </th>
+    <th> Subject </th>
+  </thead>
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+      <td><%= ticket.id %></td>
+      <td><%= ticket.name %></td>
+      <td><%= ticket.subject %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
